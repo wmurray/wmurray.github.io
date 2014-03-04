@@ -1,8 +1,6 @@
 /* 
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Coffee and Stout
+A portflio for William Murray
 */
 
 
@@ -187,6 +185,7 @@ section {
      border: 1px solid #0A0404;
      border-radius: 5px;
      margin-top: 5px;
+     margin-left: 10px;
 }
 
 img {
@@ -198,24 +197,33 @@ img {
      margin-left: 740px;
 }
 
-footer {
-     margin-top: 10px;
-}
-
 a:link, a:visited, a:hover, a:active {
      color: #C90000;
      text-decoration: none;
 }
 
-#freelance {
+.samples {
      list-style-type: none;
 }
 
-#freelance li {
+.samples li {
      height: 90px;
+}
+
+#fewd {
+    margin-bottom: 130px;
+}
+
+.description {
+    padding-top: 10px;
 }
 
 .work {
      padding-right: 20px;
      float: left;
 }
+
+footer {
+     margin-top: 10px;
+}
+
