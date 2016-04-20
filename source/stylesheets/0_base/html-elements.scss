@@ -40,19 +40,14 @@ i{
 }
 
 p {
-  font-size: golden-ratio(16px, 0);
+  font-size: 16px;
 }
 
 section {
   margin-bottom: 60px;
-
-  &:first-child {
-    margin-top: 60px;
-  }
 }
 
 .outer-container {
-  @include outer-container;
   margin-top: 0;
   padding: 0 10%;
 }

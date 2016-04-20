@@ -1,0 +1,7 @@
+.jumbotron {
+  h1 {
+    @media(min-width: $tablet){
+      margin-top: 100px;
+    }
+  }
+}

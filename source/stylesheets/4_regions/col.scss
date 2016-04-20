@@ -1,11 +1,8 @@
 .left-col {
-  @include span-columns(8);
   padding-right: 5%;
 }
 
 .right-col {
-  @include span-columns(4);
-  @include omega();
 
   div:first-child {
     margin-top: 65px;
