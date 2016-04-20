@@ -1,0 +1,26 @@
+/* Adds a right-facing arrow with animation to the left side of the associated
+link tag. */
+
+%arrow-link {
+  position: relative;
+
+  &:before {
+    @include transform(rotate(45deg));
+    @include transition(300ms);
+    border-right: 1px solid $blueDark;
+    border-top: 1px solid $blueDark;
+    content: " ";
+    display: block;
+    height: 6px;
+    left: -15px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+    width: 6px;
+  }
+
+  &:hover:before {
+    border-color: lighten($blueDark, 20%);
+    left: -20px;
+  }
+}

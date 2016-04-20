@@ -1,0 +1,68 @@
+* {
+  color: $blackBrown;
+  font-family: $roboto;
+
+  /* Box model 'hack' */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: $blackBrown;
+  font-family: $crete;
+}
+
+a {
+  @include transition(color, 300ms);
+  text-decoration: none;
+  color: $blueDark;
+
+  &:hover,
+  &:active {
+    color: lighten($blueDark, 20%);
+  }
+}
+
+i{
+  &:before {
+    @include transition(color, 300ms);
+    text-decoration: none;
+    color: $blueDark;
+  }
+
+  &:hover:before,
+  &:active:before {
+    color: lighten($blueDark, 20%);
+  }
+}
+
+p {
+  font-size: golden-ratio(16px, 0);
+}
+
+section {
+  margin-bottom: 60px;
+
+  &:first-child {
+    margin-top: 60px;
+  }
+}
+
+.outer-container {
+  @include outer-container;
+  margin-top: 0;
+  padding: 0 10%;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+  width: 0;
+}

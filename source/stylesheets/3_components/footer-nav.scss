@@ -1,0 +1,16 @@
+.footer-links {
+  @include span-columns(8);
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  padding: 8px 0 0 0;
+
+  li {
+    display: inline-block;
+    margin: 25px 40px 25px 0;
+  }
+
+  i:before {
+    font-size: golden-ratio(16px, 2);
+  }
+}
