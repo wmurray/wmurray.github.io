@@ -8,12 +8,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* Font Awesome import */
+@import "font-awesome";
+
 /* Custom imports */
 @import "normalize";
 @import "0_base/variables";
 @import "0_base/html-elements";
 @import "1_mixins/*.**";
-//@import "2_pieces/*.**";
+@import "2_pieces/*.**";
 @import "3_components/*.**";
 @import "4_regions/*.**";
 //@import "5_pages/*.**";

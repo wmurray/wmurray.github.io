@@ -1,0 +1,43 @@
+.navbar-toggle {
+  @include border-radius(22px);
+  @include transform(rotate(135deg));
+  @include transition(300ms);
+  border: 2px solid $gray;
+  height: 44px;
+  width: 44px;
+
+  &.collapsed {
+    @include transform(rotate(0deg));
+  }
+
+  .icon-bar {
+    background: transparent;
+    float: left;
+    height: 10px;
+    width: 10px;
+
+    + .icon-bar {
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      border-bottom: 1px solid $gray;
+      border-right: 1px solid $gray;
+    }
+
+    &:nth-child(3) {
+      border-bottom: 1px solid $gray;
+      border-left: 1px solid $gray;
+    }
+
+    &:nth-child(4) {
+      border-right: 1px solid $gray;
+      border-top: 1px solid $gray;
+    }
+
+    &:last-child {
+      border-left: 1px solid $gray;
+      border-top: 1px solid $gray;
+    }
+  }
+}

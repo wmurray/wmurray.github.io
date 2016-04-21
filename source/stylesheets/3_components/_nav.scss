@@ -1,0 +1,26 @@
+.navbar {
+  background: $blackBrown;
+
+  .navbar-nav > li > a {
+    color: $gray;
+    padding: 20px 15px;
+
+    &:hover {
+      background: $brownLight;
+      color: $blueDark;
+    }
+  }
+
+  .navbar-brand {
+    color: $gray;
+    font-family: $crete;
+    font-size: 20px;
+    height: 60px;
+    padding: 20px 15px;
+
+    &:hover {
+      background: $brownLight;
+      color: $blueDark;
+    }
+  }
+}
