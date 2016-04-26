@@ -10646,10 +10646,18 @@ link tag. */
   /* line 7, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_footer-links.scss */
   .footer-links li {
     display: inline-block;
-    margin: 29px 40px 29px 0; }
-  /* line 12, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_footer-links.scss */
+    margin: 29px 30px 29px 0; }
+    @media (min-width: 768px) {
+      /* line 7, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_footer-links.scss */
+      .footer-links li {
+        margin-right: 40px; } }
+  /* line 16, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_footer-links.scss */
   .footer-links i:before {
-    font-size: 32px; }
+    font-size: 28px; }
+    @media (min-width: 768px) {
+      /* line 16, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_footer-links.scss */
+      .footer-links i:before {
+        font-size: 32px; } }
 
 /* line 1, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/3_components/_jumbotron.scss */
 .jumbotron {
@@ -10730,9 +10738,17 @@ footer {
   /* line 9, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/4_regions/_footer.scss */
   footer .container {
     padding: 0; }
-  /* line 13, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/4_regions/_footer.scss */
+    @media (max-width: 479px) {
+      /* line 12, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/4_regions/_footer.scss */
+      footer .container > div:first-child {
+        padding-right: 0; } }
+  /* line 19, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/4_regions/_footer.scss */
   footer p {
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     margin: 37px 0;
     text-align: right; }
+    @media (min-width: 768px) {
+      /* line 19, /Users/wmurray/Documents/Projects/coffeeandstout/source/stylesheets/4_regions/_footer.scss */
+      footer p {
+        font-size: 12px; } }
